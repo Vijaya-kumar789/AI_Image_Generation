@@ -27,7 +27,7 @@ const Create = () => {
         });
 
         if (!response.ok) {
-          throw new Error(`Error: ${response.status} - ${response.statusText}`);
+          throw new Error(`Error: Please Try After some time`);
         }
 
         const data = await response.json();
@@ -35,10 +35,10 @@ const Create = () => {
         if (data.image) {
           setPhoto(data.image);
         } else {
-          throw new Error("No photo data in the response");
+          throw new Error("No image response");
         }
       } catch (error) {
-        toast.error("An error occurred: " + error.message);
+        toast.error(error.message);
       } finally {
         SetGeneratingImg(false);
       }
@@ -61,7 +61,9 @@ const Create = () => {
           body: JSON.stringify({ values, photo }),
         });
         await response.json();
-        toast.success("Success");
+        console.log(response.data);
+        
+        toast.success("Sheared to the community");
         navigate("/");
       } catch (err) {
         toast.error(err);

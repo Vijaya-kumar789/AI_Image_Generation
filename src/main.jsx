@@ -5,11 +5,13 @@ import App from './App.jsx'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer } from 'react-toastify';
-
+import { BrowserRouter } from 'react-router-dom';
+import "react-toastify/dist/ReactToastify.css";
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <BrowserRouter>
     <App />
     <ToastContainer
     position="top-center"
@@ -23,5 +25,6 @@ createRoot(document.getElementById('root')).render(
     pauseOnHover
     theme="colored"
     />
+     </BrowserRouter>
   </StrictMode>,
 )
