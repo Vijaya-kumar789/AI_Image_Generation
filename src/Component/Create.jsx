@@ -13,7 +13,7 @@ const Create = () => {
   const navigate = useNavigate();
 
   const generateImage = async (values) => {
-    
+
     setPhoto(null);
     if (values.prompt) {
       try {
