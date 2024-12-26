@@ -74,11 +74,11 @@ This repository contains an AI-powered image generation application built using 
    - Add your MongoDB URI and Cloudinary API credentials:
      ```env
      MONGODB_URI=your-mongodb-uri
-     PORT-Your-Port-Number
+     PORT-Your-Port=Number
      CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
      CLOUDINARY_API_KEY=your-cloudinary-api-key
      CLOUDINARY_API_SECRET=your-cloudinary-api-secret
-     CLIENT_SITE_URL-Your-Client-URL
+     CLIENT_SITE_URL=Your-Client-URL
      ```
 
 8. Start the backend server:
